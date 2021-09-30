@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { IApiManager } from '../../api/IApiManager';
+import { IApiManager } from '../../Common/IApiManager';
 import { container } from '../../DI/inversify.config';
 import { TYPES } from '../../DI/types';
 import { ReadTodoDto } from '../Dtos/read-todo.dto';
@@ -18,4 +18,4 @@ export const getTodos = async (_: Request, res: Response): Promise<void> => {
   }
 };
 
-// Other controllers can be added here.
+// Other controllers can be added here...

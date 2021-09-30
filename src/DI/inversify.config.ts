@@ -2,8 +2,8 @@ import 'reflect-metadata';
 
 import { Container } from 'inversify';
 
-import { ApiManager } from '../api/ApiManager';
-import { IApiManager } from '../api/IApiManager';
+import { ApiManager } from '../Common/ApiManager';
+import { IApiManager } from '../Common/IApiManager';
 import { ReadTodoDto } from '../Todo/Dtos/read-todo.dto';
 import { ITodoClient } from '../Todo/services/ITdoClient';
 import { TodoClient } from '../Todo/services/TodoClient';

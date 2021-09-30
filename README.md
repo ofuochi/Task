@@ -24,7 +24,7 @@ Runs the `jest` tests once.
 
 Runs the `jest` tests in watch mode, waiting for file changes.
 
-#### npm run test:integration
+#### `npm run test:integration`
 
 Runs the `jest` integration test once
 

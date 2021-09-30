@@ -15,11 +15,13 @@ describe('/GET Todos', () => {
   const request = supertest(app);
 
   it('returns 200 with list of todos', async () => {
+    // Had to use axios to mock the response from the third party api as I can't guarantee it's availability during testing
     jest.spyOn(axios, 'get').mockResolvedValue({ data: [mockTodo] });
 
     const response = await request.get('/todos');
 
     expect(response.status).toBe(200);
+    expect(response.body).toEqual([mockTodo]);
   });
 
   it('returns 500 with error', async () => {

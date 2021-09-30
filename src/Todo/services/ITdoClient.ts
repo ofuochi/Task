@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/interface-name-prefix */
 import { ReadTodoDto } from '../Dtos/read-todo.dto';
 
-// eslint-disable-next-line @typescript-eslint/interface-name-prefix
 export interface ITodoClient {
   getTodos(): Promise<ReadTodoDto[]>;
   getTodo(id: number): Promise<ReadTodoDto>;
